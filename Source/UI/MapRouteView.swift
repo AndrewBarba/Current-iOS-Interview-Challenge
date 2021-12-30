@@ -35,10 +35,10 @@ struct MapRouteView: UIViewRepresentable {
 
     class Coordinator: NSObject, MKMapViewDelegate {
         func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-            let rendere = MKPolylineRenderer(overlay: overlay)
-            rendere.lineWidth = 4
-            rendere.strokeColor = .bluCepheus
-            return rendere
+            let renderer = MKPolylineRenderer(overlay: overlay)
+            renderer.lineWidth = 4
+            renderer.strokeColor = .bluCepheus
+            return renderer
         }
     }
 }

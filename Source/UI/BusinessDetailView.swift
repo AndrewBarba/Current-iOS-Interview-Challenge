@@ -42,11 +42,16 @@ struct BusinessDetailView: View {
         }
         .task {
             do {
-                let destination = CLLocation(latitude: business.coordinates.latitude, longitude: business.coordinates.longitude)
-                let res = try await Directions.calculate(from: location, to: destination)
-                self.directionsResponse = res
+                let destination = CLLocation(
+                    latitude: business.coordinates.latitude,
+                    longitude: business.coordinates.longitude
+                )
+                directionsResponse = try await Directions.calculate(
+                    from: location,
+                    to: destination
+                )
             } catch {
-                // ignore
+                print("Failed to fetch direction.")
             }
         }
     }
@@ -88,7 +93,6 @@ struct BusinessDetailView: View {
                 .padding([.leading, .trailing], 16)
                 .background(Color.black.opacity(0.85))
         }
-
     }
 
     private var callButton: some View {
