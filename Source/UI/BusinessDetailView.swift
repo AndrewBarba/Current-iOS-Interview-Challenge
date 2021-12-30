@@ -56,7 +56,7 @@ struct BusinessDetailView: View {
         if let res = directionsResponse, let route = res.routes.first {
             MapRouteView(polyline: route.polyline)
         } else {
-            Color.gray
+            Color.londonSky
         }
     }
 
