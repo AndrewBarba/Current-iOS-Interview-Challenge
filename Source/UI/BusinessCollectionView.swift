@@ -10,37 +10,50 @@ import MapKit
 
 struct BusinessCollectionView: View {
 
+    private enum Tab {
+        case map, list
+    }
+
     var businesses: [Yelp.Models.Business]
 
     var location: CLLocation
 
-    @State private var selectedView = 0
+    @State private var selectedView = Tab.map
 
     var body: some View {
         VStack(spacing: 0) {
-            Picker("View", selection: $selectedView.animation(.linear)) {
-                Text("Map").tag(0)
-                Text("List").tag(1)
-            }
-            .pickerStyle(.segmented)
-            .frame(width: 240)
-            .padding([.top, .bottom], 12)
-
-            Color.londonSky
-                .frame(height: 2)
-                .frame(maxWidth: .infinity)
-
-            switch selectedView {
-            case 0:
-                BusinessMapView(businesses: businesses, location: location)
-                    .transition(.opacity)
-            case 1:
-                BusinessListView(businesses: businesses)
-                    .transition(.opacity)
-            default:
-                fatalError("Invalid view index")
-            }
+            segmentedControl
+            separator
+            content
         }
+    }
+
+    @ViewBuilder
+    private var content: some View {
+        switch selectedView {
+        case .map:
+            BusinessMapView(businesses: businesses, location: location)
+                .transition(.opacity)
+        case .list:
+            BusinessListView(businesses: businesses)
+                .transition(.opacity)
+        }
+    }
+
+    private var segmentedControl: some View {
+        Picker("View", selection: $selectedView.animation(.linear)) {
+            Text("Map").tag(Tab.map)
+            Text("List").tag(Tab.list)
+        }
+        .pickerStyle(.segmented)
+        .frame(width: 240)
+        .padding([.top, .bottom], 12)
+    }
+
+    private var separator: some View {
+        Color.londonSky
+            .frame(height: 2)
+            .frame(maxWidth: .infinity)
     }
 }
 
