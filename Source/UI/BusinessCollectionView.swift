@@ -18,7 +18,7 @@ struct BusinessCollectionView: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            Picker("View", selection: $selectedView) {
+            Picker("View", selection: $selectedView.animation(.linear)) {
                 Text("Map").tag(0)
                 Text("List").tag(1)
             }
@@ -33,8 +33,10 @@ struct BusinessCollectionView: View {
             switch selectedView {
             case 0:
                 BusinessMapView(businesses: businesses, location: location)
+                    .transition(.opacity)
             case 1:
                 BusinessListView(businesses: businesses)
+                    .transition(.opacity)
             default:
                 fatalError("Invalid view index")
             }
