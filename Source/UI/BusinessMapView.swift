@@ -32,18 +32,16 @@ struct BusinessMapView: View {
             showsUserLocation: true,
             annotationItems: businesses
         ) { business in
-            annoation(for: business)
+            MapAnnotation(coordinate: CLLocationCoordinate2D(
+                latitude: business.coordinates.latitude,
+                longitude: business.coordinates.longitude
+            )) {
+                NavigationLink(destination: BusinessDetailView(business: business)) {
+                    Image("pin")
+                }
+            }
         }
         .edgesIgnoringSafeArea(.bottom)
-    }
-
-    func annoation(for business: Yelp.Models.Business) -> MapAnnotation<Image> {
-        MapAnnotation(coordinate: CLLocationCoordinate2D(
-            latitude: business.coordinates.latitude,
-            longitude: business.coordinates.longitude
-        )) {
-            Image("pin")
-        }
     }
 }
 

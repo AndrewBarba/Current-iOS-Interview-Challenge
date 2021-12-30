@@ -86,7 +86,7 @@ extension Yelp.Models.Business {
             id: "preview",
             name: "Marquee",
             url: "https://abarba.me",
-            imageUrl: "$$$",
+            imageUrl: "https://abarba.me/img/bg.jpg",
             rating: 4,
             price: "$$$",
             phone: "+19085667524",

@@ -13,13 +13,10 @@ struct BusinessListView: View {
 
     var body: some View {
         List(businesses) { business in
-            VStack(spacing: 0) {
+            NavigationLink(destination: BusinessDetailView(business: business)) {
                 BusinessCell(business: business)
-                NavigationLink(destination: Text(business.name)) {
-                    EmptyView()
-                }
-                .frame(height: 0)
             }
+            .padding(.trailing, -18)
             .listRowSeparator(.hidden)
             .listRowInsets(.zero)
         }
