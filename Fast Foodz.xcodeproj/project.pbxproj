@@ -18,6 +18,8 @@
 		385402BD277A53A300573BA0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385402BC277A53A300573BA0 /* Constants.swift */; };
 		385402C1277A541200573BA0 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385402C0277A541200573BA0 /* Colors.swift */; };
 		38BD58C0277E15040001D6A4 /* BusinessDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD58BF277E15040001D6A4 /* BusinessDetailView.swift */; };
+		38BD58C2277E28BC0001D6A4 /* Directions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD58C1277E28BC0001D6A4 /* Directions.swift */; };
+		38BD58C4277E2B660001D6A4 /* MapRouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD58C3277E2B660001D6A4 /* MapRouteView.swift */; };
 		38C3ED3E277CCCEE002AC9E7 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C3ED3D277CCCEE002AC9E7 /* RootView.swift */; };
 		38C3ED40277CCDE9002AC9E7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C3ED3F277CCDE9002AC9E7 /* LocationManager.swift */; };
 		38C3ED44277CD11C002AC9E7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38C3ED43277CD11C002AC9E7 /* MapKit.framework */; };
@@ -37,6 +39,8 @@
 		385402BC277A53A300573BA0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		385402C0277A541200573BA0 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		38BD58BF277E15040001D6A4 /* BusinessDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailView.swift; sourceTree = "<group>"; };
+		38BD58C1277E28BC0001D6A4 /* Directions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Directions.swift; sourceTree = "<group>"; };
+		38BD58C3277E2B660001D6A4 /* MapRouteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRouteView.swift; sourceTree = "<group>"; };
 		38C3ED3D277CCCEE002AC9E7 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		38C3ED3F277CCDE9002AC9E7 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		38C3ED41277CD11C002AC9E7 /* Fast-Foodz--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Fast-Foodz--iOS--Info.plist"; sourceTree = "<group>"; };
@@ -92,6 +96,7 @@
 				385402B8277A4F4F00573BA0 /* HTTPClient.swift */,
 				385402BA277A535100573BA0 /* Yelp.swift */,
 				38C3ED3F277CCDE9002AC9E7 /* LocationManager.swift */,
+				38BD58C1277E28BC0001D6A4 /* Directions.swift */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -105,6 +110,7 @@
 				381F1579277D3F12007C5EF2 /* BusinessListView.swift */,
 				381F157D277D46BA007C5EF2 /* BusinessCollectionView.swift */,
 				38BD58BF277E15040001D6A4 /* BusinessDetailView.swift */,
+				38BD58C3277E2B660001D6A4 /* MapRouteView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -197,11 +203,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				385402BD277A53A300573BA0 /* Constants.swift in Sources */,
+				38BD58C2277E28BC0001D6A4 /* Directions.swift in Sources */,
 				38BD58C0277E15040001D6A4 /* BusinessDetailView.swift in Sources */,
 				385402C1277A541200573BA0 /* Colors.swift in Sources */,
 				385402BB277A535100573BA0 /* Yelp.swift in Sources */,
 				38C3ED40277CCDE9002AC9E7 /* LocationManager.swift in Sources */,
 				38C3ED3E277CCCEE002AC9E7 /* RootView.swift in Sources */,
+				38BD58C4277E2B660001D6A4 /* MapRouteView.swift in Sources */,
 				381F157C277D40DC007C5EF2 /* BusinessCell.swift in Sources */,
 				38C3ED46277CD537002AC9E7 /* BusinessMapView.swift in Sources */,
 				381F1580277D4AA3007C5EF2 /* Extensions.swift in Sources */,
@@ -337,9 +345,12 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Fast-Foodz--iOS--Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Used to find food near you.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Used to find food near you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -368,9 +379,12 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Fast-Foodz--iOS--Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Used to find food near you.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Used to find food near you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

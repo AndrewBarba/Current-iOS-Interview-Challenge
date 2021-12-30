@@ -13,10 +13,6 @@
 			</array>
 		</dict>
 	</array>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Used to find food near you.</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Used to find food near you.</string>
 	<key>MKDirectionsApplicationSupportedModes</key>
 	<array>
 		<string>MKDirectionsModeCar</string>

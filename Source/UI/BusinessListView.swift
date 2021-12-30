@@ -6,14 +6,17 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct BusinessListView: View {
 
     var businesses: [Yelp.Models.Business]
 
+    var location: CLLocation
+
     var body: some View {
         List(businesses) { business in
-            NavigationLink(destination: BusinessDetailView(business: business)) {
+            NavigationLink(destination: BusinessDetailView(business: business, location: location)) {
                 BusinessCell(business: business)
             }
             .padding(.trailing, -18)
@@ -26,6 +29,6 @@ struct BusinessListView: View {
 
 struct BusinessListView_Previews: PreviewProvider {
     static var previews: some View {
-        BusinessListView(businesses: [.preview(), .preview()])
+        BusinessListView(businesses: [.preview(), .preview()], location: Constants.Location.newYorkCity)
     }
 }

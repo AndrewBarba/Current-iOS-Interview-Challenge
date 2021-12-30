@@ -12,10 +12,13 @@ struct BusinessMapView: View {
 
     var businesses: [Yelp.Models.Business]
 
+    var location: CLLocation
+
     @State private var region: MKCoordinateRegion
 
     init(businesses: [Yelp.Models.Business], location: CLLocation) {
         self.businesses = businesses
+        self.location = location
         self._region = .init(
             initialValue: MKCoordinateRegion(
                 center: location.coordinate,
@@ -36,7 +39,7 @@ struct BusinessMapView: View {
                 latitude: business.coordinates.latitude,
                 longitude: business.coordinates.longitude
             )) {
-                NavigationLink(destination: BusinessDetailView(business: business)) {
+                NavigationLink(destination: BusinessDetailView(business: business, location: location)) {
                     Image("pin")
                 }
             }

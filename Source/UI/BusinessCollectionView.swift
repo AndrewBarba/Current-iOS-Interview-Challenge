@@ -35,7 +35,7 @@ struct BusinessCollectionView: View {
             BusinessMapView(businesses: businesses, location: location)
                 .transition(.opacity)
         case .list:
-            BusinessListView(businesses: businesses)
+            BusinessListView(businesses: businesses, location: location)
                 .transition(.opacity)
         }
     }
