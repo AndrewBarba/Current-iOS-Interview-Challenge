@@ -7,21 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		385402A8277A4EDC00573BA0 /* Fast_FoodzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38540298277A4EDC00573BA0 /* Fast_FoodzApp.swift */; };
-		385402A9277A4EDC00573BA0 /* Fast_FoodzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38540298277A4EDC00573BA0 /* Fast_FoodzApp.swift */; };
-		385402AA277A4EDC00573BA0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38540299277A4EDC00573BA0 /* ContentView.swift */; };
-		385402AB277A4EDC00573BA0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38540299277A4EDC00573BA0 /* ContentView.swift */; };
+		381F157A277D3F12007C5EF2 /* BusinessListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381F1579277D3F12007C5EF2 /* BusinessListView.swift */; };
+		381F157C277D40DC007C5EF2 /* BusinessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381F157B277D40DC007C5EF2 /* BusinessCell.swift */; };
+		381F157E277D46BA007C5EF2 /* BusinessCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381F157D277D46BA007C5EF2 /* BusinessCollectionView.swift */; };
+		381F1580277D4AA3007C5EF2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381F157F277D4AA3007C5EF2 /* Extensions.swift */; };
+		385402A8277A4EDC00573BA0 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38540298277A4EDC00573BA0 /* App.swift */; };
 		385402AC277A4EDC00573BA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3854029A277A4EDC00573BA0 /* Assets.xcassets */; };
-		385402AD277A4EDC00573BA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3854029A277A4EDC00573BA0 /* Assets.xcassets */; };
+		385402B9277A4F5000573BA0 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385402B8277A4F4F00573BA0 /* HTTPClient.swift */; };
+		385402BB277A535100573BA0 /* Yelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385402BA277A535100573BA0 /* Yelp.swift */; };
+		385402BD277A53A300573BA0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385402BC277A53A300573BA0 /* Constants.swift */; };
+		385402C1277A541200573BA0 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385402C0277A541200573BA0 /* Colors.swift */; };
+		38C3ED3E277CCCEE002AC9E7 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C3ED3D277CCCEE002AC9E7 /* RootView.swift */; };
+		38C3ED40277CCDE9002AC9E7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C3ED3F277CCDE9002AC9E7 /* LocationManager.swift */; };
+		38C3ED44277CD11C002AC9E7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38C3ED43277CD11C002AC9E7 /* MapKit.framework */; };
+		38C3ED46277CD537002AC9E7 /* BusinessMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C3ED45277CD537002AC9E7 /* BusinessMapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		38540298277A4EDC00573BA0 /* Fast_FoodzApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fast_FoodzApp.swift; sourceTree = "<group>"; };
-		38540299277A4EDC00573BA0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		381F1579277D3F12007C5EF2 /* BusinessListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessListView.swift; sourceTree = "<group>"; };
+		381F157B277D40DC007C5EF2 /* BusinessCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCell.swift; sourceTree = "<group>"; };
+		381F157D277D46BA007C5EF2 /* BusinessCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCollectionView.swift; sourceTree = "<group>"; };
+		381F157F277D4AA3007C5EF2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		38540298277A4EDC00573BA0 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		3854029A277A4EDC00573BA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3854029F277A4EDC00573BA0 /* Fast Foodz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fast Foodz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		385402A5277A4EDC00573BA0 /* Fast Foodz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fast Foodz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		385402A7277A4EDC00573BA0 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		385402B8277A4F4F00573BA0 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		385402BA277A535100573BA0 /* Yelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yelp.swift; sourceTree = "<group>"; };
+		385402BC277A53A300573BA0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		385402C0277A541200573BA0 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		38C3ED3D277CCCEE002AC9E7 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		38C3ED3F277CCDE9002AC9E7 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		38C3ED41277CD11C002AC9E7 /* Fast-Foodz--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Fast-Foodz--iOS--Info.plist"; sourceTree = "<group>"; };
+		38C3ED43277CD11C002AC9E7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
+		38C3ED45277CD537002AC9E7 /* BusinessMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,13 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		385402A2277A4EDC00573BA0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				38C3ED44277CD11C002AC9E7 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,37 +57,71 @@
 		38540292277A4EDC00573BA0 = {
 			isa = PBXGroup;
 			children = (
-				38540297277A4EDC00573BA0 /* Shared */,
-				385402A6277A4EDC00573BA0 /* macOS */,
+				38C3ED41277CD11C002AC9E7 /* Fast-Foodz--iOS--Info.plist */,
+				38540297277A4EDC00573BA0 /* Source */,
 				385402A0277A4EDC00573BA0 /* Products */,
+				38C3ED42277CD11C002AC9E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		38540297277A4EDC00573BA0 /* Shared */ = {
+		38540297277A4EDC00573BA0 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				38540298277A4EDC00573BA0 /* Fast_FoodzApp.swift */,
-				38540299277A4EDC00573BA0 /* ContentView.swift */,
+				385402B7277A4F3700573BA0 /* Lib */,
+				385402BE277A53FF00573BA0 /* UI */,
+				38540298277A4EDC00573BA0 /* App.swift */,
+				385402BC277A53A300573BA0 /* Constants.swift */,
 				3854029A277A4EDC00573BA0 /* Assets.xcassets */,
 			);
-			path = Shared;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		385402A0277A4EDC00573BA0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				3854029F277A4EDC00573BA0 /* Fast Foodz.app */,
-				385402A5277A4EDC00573BA0 /* Fast Foodz.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		385402A6277A4EDC00573BA0 /* macOS */ = {
+		385402B7277A4F3700573BA0 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				385402A7277A4EDC00573BA0 /* macOS.entitlements */,
+				385402B8277A4F4F00573BA0 /* HTTPClient.swift */,
+				385402BA277A535100573BA0 /* Yelp.swift */,
+				38C3ED3F277CCDE9002AC9E7 /* LocationManager.swift */,
 			);
-			path = macOS;
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		385402BE277A53FF00573BA0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				385402BF277A540700573BA0 /* Common */,
+				38C3ED3D277CCCEE002AC9E7 /* RootView.swift */,
+				38C3ED45277CD537002AC9E7 /* BusinessMapView.swift */,
+				381F1579277D3F12007C5EF2 /* BusinessListView.swift */,
+				381F157D277D46BA007C5EF2 /* BusinessCollectionView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		385402BF277A540700573BA0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				385402C0277A541200573BA0 /* Colors.swift */,
+				381F157B277D40DC007C5EF2 /* BusinessCell.swift */,
+				381F157F277D4AA3007C5EF2 /* Extensions.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		38C3ED42277CD11C002AC9E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38C3ED43277CD11C002AC9E7 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,23 +144,6 @@
 			productReference = 3854029F277A4EDC00573BA0 /* Fast Foodz.app */;
 			productType = "com.apple.product-type.application";
 		};
-		385402A4277A4EDC00573BA0 /* Fast Foodz (macOS) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 385402B3277A4EDC00573BA0 /* Build configuration list for PBXNativeTarget "Fast Foodz (macOS)" */;
-			buildPhases = (
-				385402A1277A4EDC00573BA0 /* Sources */,
-				385402A2277A4EDC00573BA0 /* Frameworks */,
-				385402A3277A4EDC00573BA0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Fast Foodz (macOS)";
-			productName = "Fast Foodz (macOS)";
-			productReference = 385402A5277A4EDC00573BA0 /* Fast Foodz.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -126,9 +155,6 @@
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					3854029E277A4EDC00573BA0 = {
-						CreatedOnToolsVersion = 13.2;
-					};
-					385402A4277A4EDC00573BA0 = {
 						CreatedOnToolsVersion = 13.2;
 					};
 				};
@@ -147,7 +173,6 @@
 			projectRoot = "";
 			targets = (
 				3854029E277A4EDC00573BA0 /* Fast Foodz (iOS) */,
-				385402A4277A4EDC00573BA0 /* Fast Foodz (macOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -161,14 +186,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		385402A3277A4EDC00573BA0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				385402AD277A4EDC00573BA0 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -176,17 +193,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				385402AA277A4EDC00573BA0 /* ContentView.swift in Sources */,
-				385402A8277A4EDC00573BA0 /* Fast_FoodzApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		385402A1277A4EDC00573BA0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				385402AB277A4EDC00573BA0 /* ContentView.swift in Sources */,
-				385402A9277A4EDC00573BA0 /* Fast_FoodzApp.swift in Sources */,
+				385402BD277A53A300573BA0 /* Constants.swift in Sources */,
+				385402C1277A541200573BA0 /* Colors.swift in Sources */,
+				385402BB277A535100573BA0 /* Yelp.swift in Sources */,
+				38C3ED40277CCDE9002AC9E7 /* LocationManager.swift in Sources */,
+				38C3ED3E277CCCEE002AC9E7 /* RootView.swift in Sources */,
+				381F157C277D40DC007C5EF2 /* BusinessCell.swift in Sources */,
+				38C3ED46277CD537002AC9E7 /* BusinessMapView.swift in Sources */,
+				381F1580277D4AA3007C5EF2 /* Extensions.swift in Sources */,
+				385402B9277A4F5000573BA0 /* HTTPClient.swift in Sources */,
+				381F157A277D3F12007C5EF2 /* BusinessListView.swift in Sources */,
+				385402A8277A4EDC00573BA0 /* App.swift in Sources */,
+				381F157E277D46BA007C5EF2 /* BusinessCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,12 +332,13 @@
 				DEVELOPMENT_TEAM = 9A34EG5225;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Fast-Foodz--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,12 +363,13 @@
 				DEVELOPMENT_TEAM = 9A34EG5225;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Fast-Foodz--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -362,62 +382,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		385402B4277A4EDC00573BA0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9A34EG5225;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 12.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.abarba.Fast-Foodz";
-				PRODUCT_NAME = "Fast Foodz";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		385402B5277A4EDC00573BA0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9A34EG5225;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 12.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.abarba.Fast-Foodz";
-				PRODUCT_NAME = "Fast Foodz";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -438,15 +402,6 @@
 			buildConfigurations = (
 				385402B1277A4EDC00573BA0 /* Debug */,
 				385402B2277A4EDC00573BA0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		385402B3277A4EDC00573BA0 /* Build configuration list for PBXNativeTarget "Fast Foodz (macOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				385402B4277A4EDC00573BA0 /* Debug */,
-				385402B5277A4EDC00573BA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
