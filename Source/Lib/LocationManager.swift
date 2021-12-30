@@ -58,8 +58,10 @@ extension _LocationManager: CLLocationManagerDelegate {
         switch manager.authorizationStatus {
         case .authorizedAlways, .authorizedWhenInUse:
             manager.startUpdatingLocation()
-        default:
+        case .denied, .restricted:
             self.onLocation?(Constants.Location.newYorkCity)
+        default:
+            break
         }
     }
 }
